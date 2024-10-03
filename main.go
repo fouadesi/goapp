@@ -18,7 +18,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
     http.HandleFunc("/", handler)
-    fmt.Println("Starting server on :9090")
+    fmt.Println("Starting server on :9000")
     if err := http.ListenAndServe(":9090", nil); err != nil {
         fmt.Println("Failed to start server:", err)
     }
